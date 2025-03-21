@@ -1,56 +1,99 @@
-#logo {
-    display: block;
-    margin: auto;
-    width: 200px;
-    height: auto
-    padding; 0; 
-    
+/* Generell reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.centered{
-    text-align: center;
-}
-
-.styled-links {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
+/* Header med grønn bakgrunn */
+header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00C300; /* Grønn farge */
+    padding: 15px 40px;
+}
+
+/* Logo */
+.logo img {
+    height: 100px;
+}
+
+/* Navigasjonsmeny */
+nav ul {
+    list-style: none;
+    display: flex;
     gap: 20px;
 }
 
-.styled-links a {
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: white;
+}
+
+/* Hero-seksjon */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+/* Meny-lenker */
+.menu-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.menu-links a {
     text-decoration: none;
     color: black;
     padding: 5px 10px;
     position: relative;
-    transition: color 0.3s ease-in-out;
 }
 
-.styled-links a::before,
-.styled-links a::after {
+.menu-links a::before,
+.menu-links a::after {
     content: "";
     position: absolute;
     width: 10px;
     height: 10px;
-    border: 2px solid green;
+    border: 2px solid black;
 }
 
-.styled-links a::before {
+.menu-links a::before {
     top: 0;
     left: 0;
     border-right: none;
     border-bottom: none;
 }
 
-.styled-links a::after {
+.menu-links a::after {
     bottom: 0;
     right: 0;
     border-left: none;
     border-top: none;
 }
 
-.styled-links a:hover {
-    color: green;
+/* Åpningstider */
+.opening-hours {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
 }
