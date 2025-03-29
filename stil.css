@@ -1,146 +1,130 @@
-/* Generell reset */
+/* Reset og standard font */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-}
-
-
-/* Toppseksjon (Header) */
-header {
+  }
+  
+  /* Header */
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #00C300; /* Grønn farge */
+    background-color: #00C300;
     padding: 15px 40px;
-}
-
-/* Navigasjonsmeny */
-nav ul {
+  }
+  
+  /* Navigasjon */
+  nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background 0.3s ease;
-}
-
-nav ul li a:hover {
+  }
+  
+  nav ul li a:hover {
     background-color: white;
-}
-
-/* Hovedinnhold (Hero-seksjon) */
-.hero {
+  }
+  
+  /* Hero-seksjon */
+  .hero {
     text-align: center;
     padding: 50px 20px;
     background-color: white;
     font-size: 30px;
-}
-
-/* Sentral logo */
-.center-logo {
+  }
+  
+  /* Logo */
+  .center-logo {
     width: 280px;
-    margin-bottom: 10x;
-}
-
-/* Meny-lenker */
-.menu-links {
+    margin-bottom: 10px; /* ← fikset skrivefeil (tidligere 10x) */
+  }
+  
+  /* Meny-lenker */
+  .menu-links {
     display: flex;
     justify-content: center;
     gap: 30px;
     font-size: 24px;
     font-weight: bold;
     margin-top: 20px;
-}
-
-.menu-links a {
+  }
+  
+  .menu-links a {
     text-decoration: none;
     color: black;
     padding: 5px 10px;
     position: relative;
-}
-
-.menu-links a::before,
-.menu-links a::after {
+  }
+  
+  .menu-links a::before,
+  .menu-links a::after {
     content: "";
     position: absolute;
     width: 10px;
     height: 10px;
     border: 2px solid black;
-}
-
-.menu-links a::before {
+  }
+  
+  .menu-links a::before {
     top: 0;
     left: 0;
     border-right: none;
     border-bottom: none;
-}
-
-.menu-links a::after {
+  }
+  
+  .menu-links a::after {
     bottom: 0;
     right: 0;
     border-left: none;
     border-top: none;
-}
-
-/* Åpningstider */
-.opening-hours {
+  }
+  
+  /* Åpningstider */
+  .opening-hours {
     font-size: 18px;
     font-weight: bold;
     margin-top: 10px;
-}
-
-/* text aligement */
-
-.centered{
-    width: auto;
-    text-align: center;
-    margin: auto;
-    line-height: normal;
-}
-
-/* intro */
-
-.intro {
-    max-width: 700px;
+  }
+  
+  /* Intro-tekst */
+  .intro {
+    max-width: 800px;
     margin: 2rem auto;
     text-align: center;
     line-height: 1.6;
     font-size: 1rem;
-
-  }
-  .intro strong {
-    color: #000;
-  }
-
-/* For titler */
-.title{
-    text-align: center;
-    align-content: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-/* For Te */
-
-.tea-menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    padding: 2rem;
+    color: #333;
   }
   
+  /* Titler */
+  .title {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2rem;
+  }
+  
+  /* Tea-meny grid */
+  .tea-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+  }
+  
+  /* Hvert kort */
   .tea-card {
     padding: 1rem;
     border: 2px solid transparent;
