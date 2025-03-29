@@ -192,3 +192,65 @@
     margin-bottom: 1rem;
   }
   
+  .map-container {
+    max-width: 1100px;
+    margin: 0 auto 3rem auto;
+    padding: 0 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .contact-section {
+    padding: 3rem 2rem;
+    border-top: 2px solid #ccc;
+    font-family: Arial, sans-serif;
+    background: none;
+  }
+  
+  .contact-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .column {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .column h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .column hr {
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    margin: 0.5rem 0 1rem;
+  }
+  
+  .column p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .highlight-link {
+    color: #444;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .highlight-link:hover {
+    color: #00C300;
+    font-weight: bold;
+  }
+  
+  .highlight-link i {
+    margin-right: 8px;
+  }
+    
