@@ -15,11 +15,6 @@ header {
     padding: 15px 40px;
 }
 
-/* Logo i header */
-.logo img {
-    height: 50px;
-}
-
 /* Navigasjonsmeny */
 nav ul {
     list-style: none;
